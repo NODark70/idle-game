@@ -1,19 +1,27 @@
 var score = 0;
 
-postToPage(score); // Print to the page
+var title = new HTMLElement('h1', 'Welcome to the Game');
+var button = new Button('hello');
+var buttonWorld = new Button('world');
+var columns = new Columns(2);
 
-createButton('Kofi', btnPress); // Make a button
+createButton('Kof', btnPress); // Make a button
 changeTitle('Clicker Game');
 createButton('bam', btnPress); // Make a button
 changeTitle('Clicker Game');
 
-setInterval(btnPress, 1000);
+columns.addToColumn(1, buttonWorld);
+columns.addToColumn(2, button);
 
 function btnPress() {
-  score--;
+  score++;
   postToPage(score);
 
+if(score > 10){
 
+  return "Congrats... your score is humongous"
+  postToPage()
+}
 
 
 
