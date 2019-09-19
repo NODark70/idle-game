@@ -1,10 +1,9 @@
 var score = 1; // Create a variable to store the score in
 
-var title = new Title('Welcome to the Game'); // Create a title element
-var button = new Button('hello', btnPress);   // Create a button element
-var hidden = new Button('Boo!');
-hidden.hide();
-var button = new Button('chicken', btnPress);   // Create a button element
+var title = new Title('The Game of Life'); // Create a title element
+var button = new Button('Go', btnPress);   // Create a button element
+var button = new Button('Rules', btnPress);   // Create a button element
+var button = new Button('High Scores', btnPress);   // Create a button element
 
 
 var scr = new Text(score);                    // Create a text element
@@ -23,8 +22,12 @@ function btnPress() {
 }
 
 
-
-function btnPress(){
-  score++
-  if()
-}
+var button = new Button('Grow', btnPress);   // Create a button element
+var button = new Button('Eat Milk', btnPress);   // Create a button element
+var button = new Button('Eat Applesauce', btnPress);   // Create a button element
+var button = new Button('Life Points', btnPress);   // Create a button element
+var button = new Button('High Scores', btnPress);   // Create a button element
+var button = new Button('High Scores', btnPress);   // Create a button element
+var button = new Button('High Scores', btnPress);   // Create a button element
+var button = new Button('High Scores', btnPress);   // Create a button element
+var button = new Button('High Scores', btnPress);   // Create a button element
