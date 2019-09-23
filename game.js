@@ -4,14 +4,15 @@ var title = new Title('In the Year 2099'); // Create a title element
 var button = new Button('Be Born', btnPress);   // Create a button element
 var button = new Button('Rules', btnPress);   // Create a button element
 var button = new Button('High Scores', btnPress);   // Create a button element
-let mySection = new Section();
-var rockButton = new Button('Collect rocks');
-var stoneButton = new Button('Collect stones');
+var text1 = new Text('Eat Applesauce 1');  // Create some text to go in the columns
+var text2 = new Text('Drink Milk');
 
-var buttonSection = new Section();
+var rowSection = new Section('row'); // Create the row to store the columns in
+var column1 = new Section('col');    // Create the first column
+var column2 = new Section('col');    // Create the second column
 
-buttonSection.add(rockButton);
-buttonSection.add(stoneButton);
+column1.add(text1);
+column2.add(text2);
 
 var scr = new Text(score);                    // Create a text element
 
@@ -30,8 +31,8 @@ function btnPress() {
 
 
 //var button = new Button('Grow', btnPress);   // Create a button element
-//var button = new Button('Eat Milk', btnPress);   // Create a button element
-//var button = new Button('Eat Applesauce', btnPress);   // Create a button element
+var button = new Button('Eat Milk', btnPress);   // Create a button element
+var button = new Button('Eat Applesauce', btnPress);   // Create a button element
 //var button = new Button('Life Points', btnPress);   // Create a button element
 //var button = new Button('Store', btnPress);   // Create a button element
 //var button = new Button('High Scores', btnPress);   // Create a button element
