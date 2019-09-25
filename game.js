@@ -25,7 +25,7 @@ column1.add(text1);
 column2.add(text2);
 
 var scr = new Text(score);                    // Create a text element
-
+//changes
 setInterval(btnPress, 1000);   // Set up a loop
 
 function getMilk (){
@@ -50,7 +50,7 @@ function btnPress() {
   }
   if(score < 15)
     hidden.hide(500);
-  
+
 
   score++;
   scr.edit(score);
