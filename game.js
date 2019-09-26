@@ -13,14 +13,17 @@ var column1 = new Section('col');    // Create the first column
 var column2 = new Section('col');    // Create the second column
 
 //var button = new Button('Grow', btnPress);   // Create a button element
-var button = new Button('Eat Milk', btnPress);   // Create a button element
-var button = new Button('Eat Applesauce', btnPress);   // Create a button element
-var button = new Button ('Collect life points', btnPress);
-var button = new Button ('Grow', btnPress);
-var button = new Button ('Store', btnPress);
-var button = new Button ('', btnPress);
-var button = new Button ('Collect life points', btnPress);
-var button = new Button ('Collect life points', btnPress);
+var milk = new Button('Eat Milk', btnPress);   // Create a button element
+milk.hide()
+var applesauce = new Button('Eat Applesauce', btnPress);   // Create a button element
+var points = new Button ('Collect life points', btnPress);
+var grow = new Button ('Grow', btnPress);
+var store = new Button ('Store', btnPress);
+var el school = new Button ('Attend elementary school', btnPress);
+var m school = new Button ('Attend middle school', btnPress);
+var h school = new Button ('Attend high school', btnPress);
+var college = new Button ('Apply for college', btnPress);
+var graduate = new Button ('Graduate', btnPress);
 
 
 
@@ -33,25 +36,12 @@ var scr = new Text(score);                    // Create a text element
 //changes
 setInterval(btnPress, 1000);   // Set up a loop
 
-function getMilk (){
-
-var text4 = new Text('You are now full');
-
-}
-
-
-function eatApplesauce(){
-
-
-}
-
 
 function btnPress() {
-
   score++;         // Increase the score
-  scr.edit(score); // Update the page with the new score
+  //scr.edit(score); // Update the page with the new score
   if(score > 10) {
-    hidden.show();
+    hidden.hide(500);
   }
   if(score < 15)
     hidden.hide(500);
