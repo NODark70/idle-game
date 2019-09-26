@@ -16,6 +16,11 @@ var column2 = new Section('col');    // Create the second column
 var button = new Button('Eat Milk', btnPress);   // Create a button element
 var button = new Button('Eat Applesauce', btnPress);   // Create a button element
 var button = new Button ('Collect life points', btnPress);
+var button = new Button ('Grow', btnPress);
+var button = new Button ('Store', btnPress);
+var button = new Button ('', btnPress);
+var button = new Button ('Collect life points', btnPress);
+var button = new Button ('Collect life points', btnPress);
 
 
 
