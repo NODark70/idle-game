@@ -10,7 +10,7 @@ var text3 = new Text('Good luck');
 
 var rowSection = new Section('row'); // Create the row to store the columns in
 var column1 = new Section('col');    // Create the first column
-var column2 = new Section('col');    // Create the second column
+var column2 = new Section('col');    // Create the sona fcecond column
 
 //var button = new Button('Grow', btnPress);   // Create a button element
 var milk = new Button('Drink Milk', btnPress);   // Create a button element
@@ -23,38 +23,53 @@ var grow = new Button ('Grow', btnPress);
 grow.hide()
 var store = new Button ('Store', btnPress);
 store.hide()
+var preschool = new Button ('Attend preschool');
+preschool.hide()
 var elschool = new Button ('Attend elementary school', btnPress);
 elschool.hide()
 var mschool = new Button ('Attend middle school', btnPress);
 mschool.hide()
 var hschool = new Button ('Attend high school', btnPress);
-hachool.hide()
+hschool.hide()
 var college = new Button ('Apply for college', btnPress);
 college.hide()
 var graduate = new Button ('Graduate', btnPress);
 graduate.hide()
-
-
+var growth = new Text ('You are happy and growing properly');
+growth.hide()
 
 
 column1.add(text1);
 column2.add(text2);
 
-var scr = new Text(score);                    // Create a text element
+//var scr = new Text(score);                    // Create a text element
 //changes
-setInterval(btnPress, 1000);   // Set up a loop
+//setInterval(btnPress, 1000);   // Set up a loop
 
 
 function btnPress() {
-  score++;         // Increase the score
+  //score++;         // Increase the score
   //scr.edit(score); // Update the page with the new score
-  if(score > 10) {
-    hidden.hide(500);
+  if(score > 5) {
+    milk.show(500);
+    let text  = new Text('You are are full');          // Creates a text element and place it on the screen
+
+
   }
-  if(score < 15)
-    hidden.hide(500);
 
+  if(score < 10)
+    applesauce.show(500);
 
-  score++;
-  scr.edit(score);
 }
+
+  if(score > 15){
+    growth.show(500)
+    let text  = new Text('You are happy and growing properly');          // Creates a text element and place it on the screen
+
+  }
+
+  if(score = 30) {
+    preschool.show()
+
+
+  }
