@@ -13,18 +13,26 @@ var column1 = new Section('col');    // Create the first column
 var column2 = new Section('col');    // Create the second column
 
 //var button = new Button('Grow', btnPress);   // Create a button element
-var milk = new Button('Eat Milk', btnPress);   // Create a button element
-milk.hide()
+var milk = new Button('Drink Milk', btnPress);   // Create a button element
+milk.show()
 var applesauce = new Button('Eat Applesauce', btnPress);   // Create a button element
+applesauce.hide()
 var points = new Button ('Collect life points', btnPress);
+points.hide()
 var grow = new Button ('Grow', btnPress);
+grow.hide()
 var store = new Button ('Store', btnPress);
-var el school = new Button ('Attend elementary school', btnPress);
-var m school = new Button ('Attend middle school', btnPress);
-var h school = new Button ('Attend high school', btnPress);
+store.hide()
+var elschool = new Button ('Attend elementary school', btnPress);
+elschool.hide()
+var mschool = new Button ('Attend middle school', btnPress);
+mschool.hide()
+var hschool = new Button ('Attend high school', btnPress);
+hachool.hide()
 var college = new Button ('Apply for college', btnPress);
+college.hide()
 var graduate = new Button ('Graduate', btnPress);
-
+graduate.hide()
 
 
 
