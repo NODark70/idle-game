@@ -13,6 +13,7 @@ var column1 = new Section('col');    // Create the first column
 var column2 = new Section('col');    // Create the sona fcecond column
 
 //var button = new Button('Grow', btnPress);   // Create a button element
+
 var milk = new Button('Drink Milk', btnPress);   // Create a button element
 milk.show()
 var applesauce = new Button('Eat Applesauce', btnPress);   // Create a button element
@@ -38,38 +39,43 @@ graduate.hide()
 var growth = new Text ('You are happy and growing properly');
 growth.hide()
 
-
 column1.add(text1);
 column2.add(text2);
 
-//var scr = new Text(score);                    // Create a text element
+var scr = new Text(score);                    // Create a text element
 //changes
-//setInterval(btnPress, 1000);   // Set up a loop
+setInterval(btnPress, 1000);   // Set up a loop
 
 
 function btnPress() {
-  //score++;         // Increase the score
-  //scr.edit(score); // Update the page with the new score
-  if(score > 5) {
+  score++;         // Increase the score
+  scr.edit(score); // Update the page with the new score
+  if(score > 20) {
     milk.show(500);
     let text  = new Text('You are are full');          // Creates a text element and place it on the screen
 
 
   }
 
-  if(score < 10)
+  if(score > 10) {
     applesauce.show(500);
+  }
 
+
+  if(score > 40){
+    //let text  = new Text('You are happy and growing properly');          // Creates a text element and place it on the screen
+    growth.show()
+  }
 }
 
-  if(score > 15){
-    growth.show(500)
-    let text  = new Text('You are happy and growing properly');          // Creates a text element and place it on the screen
 
-  }
-
-  if(score = 30) {
-    preschool.show()
+  //if(score = 30) {
+  //  preschool.show()
 
 
-  }
+  //}
+
+  //if(score < 40){
+
+
+  //}
